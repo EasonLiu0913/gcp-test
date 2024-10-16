@@ -23,7 +23,7 @@ readiness_check:
   success_threshold: 2
   app_start_timeout_sec: '300'
 service_account: hotai-connected-gae-poc@appspot.gserviceaccount.com
-flexible_runtime_settings:
+runtime_config:
   operating_system: "ubuntu22"
   runtime_version: "20"
 env_variables:
