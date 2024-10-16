@@ -40,6 +40,7 @@ export default function Home() {
               Get started by editing <code>src/pages/index.js</code>.
             </li>
             <li>Save and see your changes instantly.</li>
+            <li>String from env test:{process.env.XXXXX}</li>
           </ol>
 
           <div className={styles.ctas}>
