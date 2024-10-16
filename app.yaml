@@ -1,4 +1,4 @@
-runtime: nodejs20
+runtime: nodejs
 api_version: '0.1'
 env: standard
 threadsafe: true
