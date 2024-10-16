@@ -1,4 +1,4 @@
-runtime: nodejs
+runtime: nodejs20
 api_version: '0.1'
 env: flexible
 threadsafe: true
@@ -26,3 +26,5 @@ service_account: hotai-connected-gae-poc@appspot.gserviceaccount.com
 flexible_runtime_settings:
   operating_system: "ubuntu22"
   runtime_version: "20"
+env_variables:
+  NEXT_PUBLIC_XXXXX: 'ABCDE'
