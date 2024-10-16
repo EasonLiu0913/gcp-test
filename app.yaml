@@ -1,0 +1,27 @@
+runtime: nodejs
+api_version: '0.1'
+env: flexible
+threadsafe: true
+manual_scaling:
+  instances: 1
+network:
+  name: frontend-test
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+liveness_check:
+  initial_delay_sec: '300'
+  check_interval_sec: '30'
+  timeout_sec: '4'
+  failure_threshold: 4
+  success_threshold: 2
+readiness_check:
+  check_interval_sec: '5'
+  timeout_sec: '4'
+  failure_threshold: 2
+  success_threshold: 2
+  app_start_timeout_sec: '300'
+service_account: hotai-connected-gae-poc@appspot.gserviceaccount.com
+flexible_runtime_settings:
+  operating_system: ubuntu22
