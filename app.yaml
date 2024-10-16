@@ -7,9 +7,6 @@ handlers:
   - url: /.*
     script: auto  
 
-# Optional but recommended for HTTPS enforcement
-secure: always 
-
 threadsafe: true
 manual_scaling:
   instances: 1
